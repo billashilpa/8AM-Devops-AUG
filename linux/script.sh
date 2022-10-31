@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "This is git repo"
+Hello world from shilpa
