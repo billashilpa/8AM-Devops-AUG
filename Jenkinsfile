@@ -1,20 +1,23 @@
 pipeline {
   agent any
   stages {
-    stage ('build') {
+    stage('build') {
       steps {
         sh 'bash mnp'
       }
     }
-    stage ('test') {
+
+    stage('test') {
       steps {
         sh 'bash aws'
       }
     }
-    stage ('deploy') {
+
+    stage('deploy') {
       steps {
         sh 'bash devops'
       }
     }
+
   }
 }
